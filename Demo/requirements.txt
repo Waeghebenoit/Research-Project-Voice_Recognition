@@ -1,0 +1,18 @@
+# Audio processing library
+sounddevice
+
+# Numerical computations
+# for the file one_model use a version <2
+numpy<2.0
+
+# Signal processing library
+scipy
+
+# Feature extraction for speech recognition
+python_speech_features
+# GPIO control for Raspberry Pi
+RPI.GPIO
+
+# TensorFlow Lite runtime
+tflite_runtime
+

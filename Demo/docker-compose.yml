@@ -1,0 +1,11 @@
+services:
+  speech_recognition:
+    container_name: speech_recognition
+    build:
+      context: .
+      dockerfile: Dockerfile
+    devices:
+      - "/dev/gpiomem:/dev/gpiomem"  # Give access to GPIO
+      - "/dev/snd:/dev/snd"  # Allows access to sound devices (USB microphone)
+    privileged: true  # Allow access to low-level hardware
+    user: "root"  # In case the user needs higher privileges to access audio devices
